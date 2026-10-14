@@ -98,7 +98,9 @@
 <script>
 "use strict";
 // Read-only API token for the public database (CloudKit Console › Tokens & Keys › API Tokens).
-const CK_API_TOKEN = "__CLOUDKIT_API_TOKEN__";
+// Production token, limited to https://kazuyatetsuo-sys.github.io. It only grants reading the public
+// database, where everything is encrypted, so it is fine for it to be public.
+const CK_API_TOKEN = "28bc223e7c651682f4c452a19d1574cef539cb9807cd6ae5053a3b01e5d7b501";
 const CK_URL = "https://api.apple-cloudkit.com/database/1/iCloud.com.kazoo.BizKaikei/production/public/records/lookup";
 const REFRESH_MS = 5 * 60 * 1000;
 
